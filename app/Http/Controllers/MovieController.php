@@ -15,6 +15,8 @@ class MovieController extends Controller
     public function index()
     {
         //
+        $movies=Movie::all()->with('Categorry')->get();
+
         $movies=Movie::all();
         return view('movies/index',compact('movies'));
     }
@@ -43,12 +45,14 @@ class MovieController extends Controller
         Movie::create([
             'movie_name'=>$request->movie_name,
             'movie_description'=>$request->movie_description,
-            'movie_gener'=>$request->movie_gener,
-            'category_id'=>$request->category_id
-          
         ]);
+        // ->categrroy()->attach("$request->category_id,$request->category_id2") ;
+        //    'movie_gener'=>$request->movie_gener,
+        //     'category_id'=>$request->category_id
+          
+       
 
-        return redirect()->back();
+        return redirect()->back()->with(['message'=>'success']);
     }
 
     /**

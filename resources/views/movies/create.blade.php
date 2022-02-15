@@ -22,13 +22,14 @@
     <input type="text" class="form-control" id="exampleInputPassword1" name="movie_description">
   </div>
 
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">movie gener</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" name="movie_gener">
-  </div>
+
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">category id</label>
     <input type="text" class="form-control" id="exampleInputPassword1" name="category_id">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">category id2</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" name="category_id2">
   </div>
   <!-- <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">price</label>

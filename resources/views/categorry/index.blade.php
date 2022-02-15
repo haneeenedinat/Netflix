@@ -47,7 +47,6 @@
     <tr>
         <th>name_categorry</th>
         <th>description_categorry</th>
-        <!-- <th>movie_gener</th> -->
         <th>delete</th>
         <th>edit</th>
     </tr>
@@ -55,7 +54,6 @@
     <tr>
         <th>{{$categorrye->name_categorry}}</th>
         <th>{{$categorrye->description_categorry}}</th>
-        <!-- <th>{{$categorrye->movie_gener}}</th> -->
         <form method="POST" action="{{route('categorry.destroy',$categorrye->id)}}">
         @csrf
         @method('delete')

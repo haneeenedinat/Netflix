@@ -17,7 +17,7 @@ class CreateMoviesTable extends Migration
             $table->id();
             $table->string("movie_name");
             $table->text("movie_description");
-            $table->string("movie_gener");
+            // $table->string("movie_gener");
             $table->timestamps();
 
         });

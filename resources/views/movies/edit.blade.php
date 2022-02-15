@@ -23,12 +23,12 @@
     <input type="text" class="form-control" id="exampleInputPassword1" name="movie_description"
     value="{{$movie->movie_description}}">
   </div>
-
+<!-- 
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">movie gener</label>
     <input type="text" class="form-control" id="exampleInputPassword1" name="movie_gener"
     value="{{$movie->movie_gener}}">
-  </div>
+  </div> -->
 
  
   <button type="submit" class="btn btn-primary">Submit</button>

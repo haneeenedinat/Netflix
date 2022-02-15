@@ -14,10 +14,10 @@ class Movie extends Model
         'movie_name',
         'movie_description',
         'movie_gener',
-        'category_id'
+        // 'category_id'
     ];
     public function categrroy(){
-        return $this->hasMany(Categorry::class);
+        return $this->belongsToMany(Categorry::class ,'genre_movie');
     }
 
    

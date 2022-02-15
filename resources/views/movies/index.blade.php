@@ -47,7 +47,6 @@
     <tr>
         <th>movie_name</th>
         <th>movie_description</th>
-        <th>movie_gener</th>
         <th>delete</th>
         <th>edit</th>
     </tr>
@@ -55,7 +54,7 @@
     <tr>
         <th>{{$movie->movie_name}}</th>
         <th>{{$movie->movie_description}}</th>
-        <th>{{$movie->movie_gener}}</th>
+   
         <form method="POST" action="{{route('movies.destroy',$movie->id)}}">
         @csrf
         @method('delete')
