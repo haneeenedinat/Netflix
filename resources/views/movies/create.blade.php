@@ -23,26 +23,15 @@
   </div>
 
 
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">category id</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" name="category_id">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">category id2</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" name="category_id2">
-  </div>
-  <!-- <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">price</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" name="price">
-  </div> -->
-  <!-- <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">categroy id</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" name="category_id">
-  </div> -->
-  <!-- <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">categroy</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" name="price">
-  </div> -->
+  <div class="form-group mb-5">
+            <label class="form-label">Category :</label><br>
+            <label><input type="checkbox" name="genre[]" value="1"> Action</label>
+            <label><input type="checkbox" name="genre[]" value="2"> Comedy</label>
+            <label><input type="checkbox" name="genre[]" value="3"> adventure</label>
+            <label><input type="checkbox" name="genre[]" value="4"> horror</label>
+            <label><input type="checkbox" name="genre[]" value="5"> drama</label>
+        </div>
+
  
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

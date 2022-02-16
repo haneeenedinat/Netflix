@@ -46,14 +46,14 @@
 <table border="1">
     <tr>
         <th>name_categorry</th>
-        <th>description_categorry</th>
+  
         <th>delete</th>
         <th>edit</th>
     </tr>
     @foreach($Categorry as $categorrye)
     <tr>
         <th>{{$categorrye->name_categorry}}</th>
-        <th>{{$categorrye->description_categorry}}</th>
+     
         <form method="POST" action="{{route('categorry.destroy',$categorrye->id)}}">
         @csrf
         @method('delete')

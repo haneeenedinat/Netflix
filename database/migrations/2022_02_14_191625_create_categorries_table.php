@@ -16,7 +16,6 @@ class CreateCategorriesTable extends Migration
         Schema::create('categorries', function (Blueprint $table) {
             $table->id();
             $table->string("name_categorry");
-            $table->text("description_categorry");
             $table->timestamps();
 
 

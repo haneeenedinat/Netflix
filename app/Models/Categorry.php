@@ -11,9 +11,9 @@ class Categorry extends Model
 
     protected $fillable=[
         'name_categorry',
-        'description_categorry',
+
     ];
     public function movies(){
-        return $this->belongsToMany(Movie::class ,'genre_movie');
+        return $this->belongsToMany(Movie::class );
     }
 }

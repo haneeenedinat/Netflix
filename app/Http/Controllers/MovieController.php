@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Movie;
+use App\Models\Categorry;
 use Illuminate\Http\Request;
 
 class MovieController extends Controller
@@ -15,7 +16,7 @@ class MovieController extends Controller
     public function index()
     {
         //
-        $movies=Movie::all()->with('Categorry')->get();
+        // $movies=Movie::all()->with('Categorry')->get();
 
         $movies=Movie::all();
         return view('movies/index',compact('movies'));
@@ -41,18 +42,18 @@ class MovieController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        Movie::create([
-            'movie_name'=>$request->movie_name,
-            'movie_description'=>$request->movie_description,
-        ]);
-        // ->categrroy()->attach("$request->category_id,$request->category_id2") ;
-        //    'movie_gener'=>$request->movie_gener,
-        //     'category_id'=>$request->category_id
+     
           
-       
+        $movie = new Movie();
+        $movie->movie_name = $request->movie_name;
+        $movie->movie_description = $request->movie_description;
+        $movie->save();
 
-        return redirect()->back()->with(['message'=>'success']);
+        $Categorry = Categorry::find($request->genre);
+        $movie->categrroy()->attach($Categorry);
+
+        return redirect()->back();
+
     }
 
     /**

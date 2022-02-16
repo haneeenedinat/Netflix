@@ -43,6 +43,7 @@
   <button class="create"><a href="{{route('movies.create')}}">create</a></button>
 </br>
 
+
 <table border="1">
     <tr>
         <th>movie_name</th>

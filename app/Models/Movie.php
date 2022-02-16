@@ -13,11 +13,10 @@ class Movie extends Model
     protected $fillable=[
         'movie_name',
         'movie_description',
-        'movie_gener',
-        // 'category_id'
+
     ];
     public function categrroy(){
-        return $this->belongsToMany(Categorry::class ,'genre_movie');
+        return $this->belongsToMany(Categorry::class);
     }
 
    

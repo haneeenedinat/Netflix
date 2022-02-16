@@ -17,27 +17,9 @@
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name_categorry">
     
   </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">description categorry</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" name="description_categorry">
-  </div>
 
-  <!-- <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">movie gener</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" name="movie_gener">
-  </div> -->
-  <!-- <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">price</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" name="price">
-  </div> -->
-  <!-- <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">categroy id</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" name="category_id">
-  </div> -->
-  <!-- <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">categroy</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" name="price">
-  </div> -->
+
+
  
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
